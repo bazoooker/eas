@@ -30,3 +30,162 @@
     background-repeat: no-repeat;
 }
 
+
+
+
+
+
+@mixin bg-graient-all {
+    background-position: top center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-image: -ms-linear-gradient(top, rgba(7, 81, 177, .8) 0%, rgba(7, 81, 177, .1) 75%, rgba(154, 115, 82, .8) 100%);
+    background-image: -moz-linear-gradient(top, rgba(7, 81, 177, .8) 0%, rgba(7, 81, 177, .1) 75%, rgba(154, 115, 82, .8) 100%);
+    background-image: -o-linear-gradient(top, rgba(7, 81, 177, .8) 0%, rgba(7, 81, 177, .1) 75%, rgba(154, 115, 82, .8) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(7, 81, 177, .5)), color-stop(75, rgba(7, 81, 177, .1)), color-stop(100, rgba(154, 115, 82, .8)));
+    background-image: -webkit-linear-gradient(top, rgba(7, 81, 177, .8) 0%, rgba(7, 81, 177, .1) 75%, rgba(154, 115, 82, .8) 100%);
+    background-image: linear-gradient(to bottom, rgba(7, 81, 177, .8) 0%, rgba(7, 81, 177, .1) 75%, rgba(154, 115, 82, .8) 100%);
+    // background-image: url(/img/bg/bg-grad-blue.png);
+}
+
+@mixin bg-graient-top {
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-image: -ms-linear-gradient(top, #0751B1 0%, transparent 100%);
+    background-image: -moz-linear-gradient(top, #0751B1 0%, transparent 100%);
+    background-image: -o-linear-gradient(top, #0751B1 0%, transparent 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0751B1), color-stop(100, transparent));
+    background-image: -webkit-linear-gradient(top, #0751B1 0%, transparent 100%);
+    background-image: linear-gradient(to bottom, #0751B1 0%, transparent 100%);
+}
+
+@mixin font-h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 110%;
+    margin: 0 0 2.5rem 0;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 4.6rem;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 4.3rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 4rem;
+        margin: 0 0 2rem 0;
+    }
+    @media screen and (max-width: 568px) {
+        font-size: 3.5rem;
+        margin: 0 0 1.8rem 0;
+    }
+}
+
+@mixin font-h2 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: $color_main;
+    line-height: 110%;
+    // margin: 0 0 2.5rem 0;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 4.5rem;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 4.1rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 3.7rem;
+        // margin: 0 0 2rem 0;
+    }
+    @media screen and (max-width: 568px) {
+        font-size: 3.3rem;
+        // margin: 0 0 1.8rem 0;
+    }
+}
+
+@mixin font-h3 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: gray;
+    line-height: 110%;
+    margin: 0 0 2.5rem 0;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 4.5rem;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 4.1rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 3.7rem;
+        margin: 0 0 2rem 0;
+    }
+    @media screen and (max-width: 568px) {
+        font-size: 3.3rem;
+        margin: 0 0 1.8rem 0;
+    }
+}
+
+@mixin font-text {
+    font-size: 1.8rem;
+    line-height: 110%;
+    font-weight: 400;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 1.8rem;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 1.7rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 568px) {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin font-big {
+    font-size: 3rem;
+    font-weight: 200;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 2.6rem;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 2.3rem;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 2.1rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1.9rem;
+    }
+    @media screen and (max-width: 568px) {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+@mixin font-link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 568px) {
+        font-size: 1.4rem;
+    }
+}

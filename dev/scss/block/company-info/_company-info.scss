@@ -1,3 +1,42 @@
 .company-info {
-	@include flex-row(wrap, space-between, center);	
+
 }
+
+.company-info_horiz {
+	@include flex-row(nowrap, space-between, center);	
+}
+.company-info_vert {
+	@include flex-row(wrap, flex-end, center);	
+	margin: 0 12rem 0 0;
+
+	.phone {
+		flex: 1 1 100%;
+
+		margin: 0 0 .7rem 0;
+		padding: 0 0 0 0;
+
+		color: #000;
+		text-align: right;
+	}
+
+	.company-mail {
+		flex: 1 1 100%;
+		display: block;
+		text-align: right;
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	.company-info_vert {
+		margin: 0 0 0 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.company-info_vert {
+		@include flex-row(wrap, center, center);
+	}
+}
+

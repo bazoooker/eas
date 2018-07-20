@@ -1,70 +1,86 @@
 .page-footer {
 	flex: none;
-	background-color: #1c44a4;
-	background-image: url(/img/bg/bg-footer.jpg);
-	@include bg-cover;
+	background-color: #fff;
 	padding: 6rem 0;
 	width: 100%;
 
-	.container {
-		@include flex-row(nowrap, space-between, stretch);
+	// .container {
+	// 	@include flex-row(nowrap, space-between, stretch);
+	// }
+
+	.nav_vertical {
+		padding: 0 1rem 2rem 3rem;
 	}
 
-	.nav {
-		@include flex-row(nowrap, flex-start, center);
-		z-index: 2;
-		a {
-			margin: 0 0 0 0;
-			padding: 1.2rem .9rem;
-
-			font-weight: 400;
-			font-size: 1.3rem;
-			color: #fff;
-
-			text-decoration: none;
-
-			cursor: pointer;
-			transition: $tr;
-			
-			&:last-child {
-				margin-right: 0;
-			}
-
-			// &:hover {
-			// 	background-color: gainsboro;
-			// }
-			&.active {
-				font-weight: 600;
-			}
-
-		}
+	p {
+		padding: 0 0 0 3rem;
 	}
 
-	.location {
-		color: #fff;
+	.logo {
+		margin: 0 0 1rem 3rem;
 	}
 
-	.phone,
-	.phone__city-code {
-		color: #fff;
-	}
 }
 
 
-
-
-@media screen and (max-width: 960px) {
-
-}
-
-@media screen and (max-width: 850px) {
-
-}
 
 @media screen and (max-width: 768px) {
+	.page-footer {
+		.nav_vertical {
+			padding: 0 1rem 2rem 0;
+			display: block;
+			text-align: center;
 
+			a {
+				span {
+					font-size: 1.4rem;
+				}
+			}
+		}
+
+		p {
+			padding: 0 0 0 0;
+			text-align: center;
+		}
+
+		.logo {
+			display: block;
+			margin: 0 auto 2rem auto;
+		}
+
+		a.phone {
+			text-align: center;
+			font-size: 1.6rem;
+		}
+	}
 }
 
 @media screen and (max-width: 568px) {
+	.page-footer {
+		.nav_vertical {
+			padding: 0 1rem 2rem 0;
+			display: flex;
 
+			a {
+				span {
+					font-size: 1.4rem;
+				}
+			}
+		}
+
+		p {
+			padding: 0 0 0 0;
+			text-align: center;
+		}
+
+		.logo {
+			display: block;
+			margin: 0 auto 2rem auto;
+		}
+
+		a.phone {
+			text-align: center;
+			font-size: 1.6rem;
+		}
+	}
 }

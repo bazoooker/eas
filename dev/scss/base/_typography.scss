@@ -9,17 +9,14 @@ body {
     font-size: 1.4rem;
 }
 h1 {
-    font-size: 3.1rem;
+    @include font-h1;
     line-height: 100%;
-    font-weight: 300;
-    color: $color_main-b;
-    margin: 0 0 $gutter 0;
+    color: black;
+    margin: 0 0 2.5rem 0;
 }
 h2 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    color: $color_font;
-    margin: 0 0 $gutter 0;
+    @include font-h2;
+    margin: 0 0 2.5rem 0;
 }
 
 // .page-content_inner {
@@ -29,10 +26,8 @@ h2 {
 // }
 
 h3 {
-    font-size: 2.2rem;
-    color: $color_main-b;
-    font-weight: 600;
-    margin: 0 0 $gutter 0;
+    @include font-h3;
+    margin: 0 0 2.5rem 0;
 }
     
 section {
@@ -42,9 +37,7 @@ section {
     }
 }
 p, span, ul, li, button {
-    color: #000;
-    font-size: 1.6rem;
-    line-height: 100%;
+    @include font-text;
 }
 p {
     margin-top: 0;
@@ -55,22 +48,23 @@ p {
 }
 
 a {
-    color: $color_font;
+    color: $color_main;
     text-decoration: underline;
-}
-    a:hover {
+
+    &:visited,
+    &:focus {
+        color: $color_main;
+    }
+    &:hover {
         text-decoration: none;
     }
-    a:visited {
-        color: $color_font;
-    }
-    a:focus {
-        color: $color_font;
-    }
+}
 
 table {
     width: 100%;
 }
+
+
 table tr {
     font-size: 1.4rem;
     line-height: 2.2rem;
@@ -151,52 +145,52 @@ ul {
         }
     }
 }
-@media screen and (max-width: 1024px) {
-    h1 {
-        font-size: 3.3rem;
-    }
-    h2 {
-        font-size: 2.5rem;
-    }
-    h3 {
-        font-size: 1.8rem;
-    }
-}
-@media screen and (max-width: 768px) {
-    h1 {
-        line-height: 3.8rem;
-    }
-    .made-by {
-        float: none;
-    }
-    table tr {
-        font-size: 1.5rem;
-        line-height: 2.2rem;
-        position: relative;
-        ovarflow-x: scroll;
-        td {
-            padding: .7rem 1rem;
-        }
-    }
-}
-@media screen and (max-width: 569px) {
-    h1 {
-        font-size: 3rem;
-        line-height: 3.4rem;
-    }
-    h2 {
-        font-size: 2.2rem;
-    }
-    h3 {
-        font-size: 1.8rem;
-    }
-    table tr {
-        font-size: 1.4rem;
-        line-height: 2rem;
-        position: relative;
-        ovarflow: hidden;
-        td {
-            padding: .5rem .5rem;
-        }
-    }
-}
+// @media screen and (max-width: 1024px) {
+//     h1 {
+//         font-size: 3.3rem;
+//     }
+//     h2 {
+//         font-size: 2.5rem;
+//     }
+//     h3 {
+//         font-size: 1.8rem;
+//     }
+// }
+// @media screen and (max-width: 768px) {
+//     h1 {
+//         line-height: 3.8rem;
+//     }
+//     .made-by {
+//         float: none;
+//     }
+//     table tr {
+//         font-size: 1.5rem;
+//         line-height: 2.2rem;
+//         position: relative;
+//         ovarflow-x: scroll;
+//         td {
+//             padding: .7rem 1rem;
+//         }
+//     }
+// }
+// @media screen and (max-width: 569px) {
+//     h1 {
+//         font-size: 3rem;
+//         line-height: 3.4rem;
+//     }
+//     h2 {
+//         font-size: 2.2rem;
+//     }
+//     h3 {
+//         font-size: 1.8rem;
+//     }
+//     table tr {
+//         font-size: 1.4rem;
+//         line-height: 2rem;
+//         position: relative;
+//         ovarflow: hidden;
+//         td {
+//             padding: .5rem .5rem;
+//         }
+//     }
+// }

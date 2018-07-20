@@ -146,24 +146,39 @@
 }
 
 .btn-burger {
-	margin: 0 1.2rem 0 0;
-    float: left;
+	margin: 0 0 0 0;
+	height: 6rem;
+	width: 6rem;
+	background-color: #fff;
+
+    // float: left;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     transition: 200ms;
 
-    
+	cursor: pointer;
+
+	&:hover {
+		.btn-burger__bar:first-child {
+			transform: translateY(-2px);
+		}
+		.btn-burger__bar:last-child {
+			transform: translateY(2px);
+		}
+	}
 }
+    
 
 .btn-burger__bar {
 	position: relative;
-	width: 1.75rem;
-    height: 2px;
-    margin-bottom: .4rem;
-    background-color: #fff;
-    background-color: rgba(255,255,255,.6);
+	width: 1.85rem;
+    height: 3px;
+    margin-bottom: .3rem;
+    background-color: $color_main;
+    border-radius: 2px;
+    // background-color: rgba(255,255,255,.6);
     transition: $tr;
     transform-origin: center, center;
 
@@ -188,6 +203,19 @@
 
     	transition: $tr;
     }
+}
+
+.btn_search {
+	width: 6rem;
+	height: 6rem;
+	cursor: pointer;
+	
+	background-color: transparent;
+	background-image: url(/img/icons/i-search.png);
+	background-size: 2.2rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
 }
 
 .btn_metal {

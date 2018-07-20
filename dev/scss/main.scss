@@ -16,7 +16,7 @@
 @import "block/page-template/page-wrapper";
 @import "block/page-template/page-content";
 @import "block/inner-page-header/inner-page-header";
-@import "block/sidebar/sidebar";
+// @import "block/sidebar/sidebar";
 
 @import "block/sticky-header/sticky-header";
 
@@ -26,16 +26,17 @@
 @import "block/grid/grid";
 
 @import "block/nav/nav";
-@import "block/catalog-nav/catalog-nav";
+// @import "block/catalog-nav/catalog-nav";
 @import "block/nav-left/nav-left";
-@import "block/user-options/user-options";
+// @import "block/user-options/user-options";
 @import "block/logo/logo";
 
 
-@import "block/basket/basket";
-@import "block/location/location";
+// @import "block/basket/basket";
+// @import "block/location/location";
 @import "block/phone/phone";
 @import "block/company-info/company-info";
+@import "block/company-mail/company-mail";
 
 @import "block/btn/btn";
 
@@ -60,23 +61,24 @@
 
 // swiper
 @import "block/swiper/swiper";
-@import "block/swiper/slide-category";
-@import "block/category/category";
-@import "block/catalog-slider/catalog-slider";
+// @import "block/swiper/slide-category";
+// @import "block/category/category";
+// @import "block/catalog-slider/catalog-slider";
 
 @import "block/brands-slider/brands-slider";
 @import "block/brand-holder/brand-holder";
 
 
 
+@import "block/catalog-section/catalog-section";
 @import "block/catalog-list/catalog-list";
 @import "block/catalog-link/catalog-link";
 
 @import "block/cta-stripe/cta-stripe";
 
 
-@import "block/news/news";
-@import "block/news-item/news-item";
+// @import "block/news/news";
+// @import "block/news-item/news-item";
 
 @import "block/contacts/contacts";
 
@@ -93,10 +95,10 @@
 @import "block/quantity-counter/quantity-counter";
 
 // product-detail
-@import "block/product-detail/product-detail";
-@import "block/product-detail-heading/product-detail-heading.scss";
+// @import "block/product-detail/product-detail";
+// @import "block/product-detail-heading/product-detail-heading";
 
-@import "block/product-logo/product-logo";
+// @import "block/product-logo/product-logo";
 
 // features
 @import "block/feature/feature";

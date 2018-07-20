@@ -3,11 +3,11 @@
 		position: relative;
 
 		.brands-slider-btn-next {
-			background-image: url(/img/icons/arrow-right.png);
+			background-image: url(/img/icons/i-caret-right.png);
 			@include bg-contain;
 		}
 		.brands-slider-btn-prev {
-			background-image: url(/img/icons/arrow-left.png);
+			background-image: url(/img/icons/i-caret-left.png);
 			@include bg-contain;
 		}
 

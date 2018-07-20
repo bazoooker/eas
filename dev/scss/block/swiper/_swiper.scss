@@ -6,20 +6,20 @@
     height: 100%;
 }
 
-.swiper-container-brands {
-	.container {
-		position: relative;
+// .swiper-container-brands {
+// 	.container {
+// 		position: relative;
 
-		.brands-slider-btn-next {
-			background-image: url(/img/icons/arrow-right.png);
-			@include bg-contain;
-		}
-		.brands-slider-btn-prev {
-			background-image: url(/img/icons/arrow-left.png);
-			@include bg-contain;
-		}
-	}
-}
+// 		.brands-slider-btn-next {
+// 			background-image: url(/img/icons/i-caret-right.png);
+// 			@include bg-contain;
+// 		}
+// 		.brands-slider-btn-prev {
+// 			background-image: url(/img/icons/i-caret-left.png);
+// 			@include bg-contain;
+// 		}
+// 	}
+// }
 
 
 .swiper-container-products {

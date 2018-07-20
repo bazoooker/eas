@@ -1,7 +1,12 @@
 .feature {
-	text-align: center;
-	padding: 0 1.5rem 0 1.5rem;
-	// letter-spacing: .5px;
+	padding: 3rem 2rem 3rem 3rem;
+
+	// &:hover {
+	// 	background-color: none;
+	// 	background-image: url(/img/bg/bg-tile.jpg);
+	// 	@include bg-cover;
+	// }
+
 	img {
 		width: 10rem;
 		margin: 0 auto 2.5rem auto;
@@ -9,21 +14,109 @@
 }
 
 .feature__icon {
-	margin: 0 auto 2.5rem auto;
-	height: 5.6rem;
-	width: 9.5rem;
+	margin: auto;
+	height: 100%;
+	width: 100%;
+
+
 	@include bg-contain;
+	background-size: 80%;
+	background-image: url(/img/bg/bg-rf.png);
 }
 
-.feature__name {
-	font-size: 1.6rem;
-	font-weight: 600;
-	margin: 0 0 2.6rem 0;
-	color: $color_font;
+.feature__num {
+	@include font-h2;
+	color: #fff;
+	margin: 0 0 1.5rem 0;
 }
 
 .feature__desc {
-	font-size: 1.4rem;
-	color: #919191;
-	font-weight: bold;
+	@include font-big;
+	color: #fff;
+	line-height: 85%;
+}
+
+.feature__list {
+	li {
+		color: #fff;
+		list-style: none;
+		font-weight: 600;
+	}
+}
+
+.feature_filled {
+	padding: 0 !important; /*IE hack*/
+	background-color: $color_main;
+	height: 17rem;
+	transition: $tr;
+
+	a {
+	    display: block;
+	    height: 17rem;
+	    margin: -3rem -2rem -3rem -3rem;
+	    padding: 3rem 2rem 3rem 3rem;
+
+	    span {
+	    	display: block;
+	    	color: #fff;
+	    	font-size: 3rem;
+	    	font-weight: 300;
+	    	padding: 2rem 1rem 2rem 3rem;
+	    }
+	}
+
+	&:hover {
+		background-color: rgba(7,81,177,.85);
+	}
+}
+.feature_transp {
+	background-color: rgba(7,81,177,.5);
+}
+
+@media screen and (max-width: 1200px) {
+	.feature_filled {
+
+		a {
+		    span {
+		    	font-size: 2rem;
+		    }
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.feature_filled {
+
+		a {
+			margin: -3rem -2rem -3rem -3rem;
+	    	padding: 3rem 1.3rem 1.3rem 1.3rem;
+		    span {
+		    	font-size: 1.8rem;
+		    }
+		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.feature_filled {
+
+		a {
+		    span {
+		    	font-size: 1.6rem;
+		    }
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.feature_filled {
+
+		a {
+			margin: -3rem -2rem -3rem -3rem;
+	    	padding: 3rem 2rem 3rem 3rem;
+		    span {
+		    	font-size: 2.4rem;
+		    }
+		}
+	}
 }

@@ -1,0 +1,25 @@
+.company-mail {
+	background-repeat: no-repeat;
+	transition: $tr;
+
+	&:hover {
+		transform: translateY(2px);
+	}
+}
+
+.company-mail_small {
+	width: 2rem;
+	height: 1.5rem;
+	background-size: 2rem;
+	background-image: url(/img/icons/i-envelope.png);
+	background-position: 50% 0;
+}
+
+.company-mail_big {
+	display: block;
+	max-width: 14rem;
+	padding: .2rem 0 .2rem 3rem;
+	background-image: url(/img/icons/i-envelope_filled.png);
+	background-position: 0% 50%;
+	background-size: 2.5rem;
+}

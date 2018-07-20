@@ -25,18 +25,53 @@
     </head>
 
 
-
-
     <body class="page-wrapper">
             
         <!-- HEADER BEGIN --> 
         <header class="page-header">
 
-            <nav class="nav">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </nav>
+            <div class="container">
+                <div class="btn-burger js-open-menu">
+                    <i class="btn-burger__bar"></i>
+                    <i class="btn-burger__bar"></i>
+                    <i class="btn-burger__bar"></i>
+                </div>
+
+                <div class="search">
+                    <div class="btn_search js-show-search"></div>
+                    <form action="/catalog/search/">
+                        <div class="search-form">                                            
+                            <input type="text" placeholder="Например, генератор бензиновый" id="search-text" name="q">
+                            <!-- <input type="submit" id="search-submit" value=""> -->
+                        </div>
+                    </form>
+                </div>
+
+                <nav class="nav nav_horizontal">
+                    <a href="#">
+                        <span>о компании</span>
+                    </a>
+                    <a href="#">
+                        <span>продукция</span>
+                    </a>
+                    <a href="#">
+                        <span>клиентам</span>
+                    </a>
+                    <a href="#">
+                        <span>вакансии</span>
+                    </a>
+                    <a href="#">
+                        <span>контакты</span>
+                    </a>
+                </nav>
+
+                <div class="company-info company-info_horiz">
+                    <a href="tel:+73852503516" class="phone">
+                        + 7 (3852) 505-031
+                    </a>
+                    <a href="mailto:mail@yandex.ru" class="company-mail company-mail_small"></a>
+                </div>
+            </div>
 
         </header>
         <!-- HEADER END --> 
@@ -47,100 +82,169 @@
         <!-- PAGE CONTENT BEGIN -->            
         <main class="page-content" role="main">
 
+            <section class="hero hero_main-page">
 
-
-            <section class="hero">
-
-                    
-            </section>
-
-
-
-            <section class="section-padding ">
                 <div class="container">
-                    <h2>С нами выгодно!</h2>
+                    <a href="/" class="logo logo_white"></a>
+
+                    <div class="hero__offer">
+                        <h1>Поставки энергетического оборудования</h1>
+                        <p>для нужд энергетики, ЖКХ, металлургии, горнодобывающих, нефтегазовых, химических и других промышленных     отраслей. </h1>
+                    </div>
 
                     <div class="flex-row">
-                        <div class="col-3 feature">
-                            <div class="feature__icon" style="background-image: url(/img/icons/i-advantage-1.png);"></div>       
-                            <p class="feature__name">Собственный склад</p>
-                            <span class="feature__desc">90% того, что вы видите, можем отгрузить сегодня</span>
+                        <div class="col-3 feature feature_transp">
+                            <div class="feature__num">1000</div>
+                            <div class="feature__desc">товарных <br/>позиций</div>
                         </div>
-                        <div class="col-3 feature">
-                            <div class="feature__icon" style="background-image: url(/img/icons/i-advantage-2.png);"></div>  
-                            <p class="feature__name">Официальное дилерство</p>
-                            <span class="feature__desc">Дает нам возможность продавать Вам товар по выгодной цене</span>
+                        <div class="col-3 feature feature_transp">
+                            <div class="feature__num">100</div>
+                            <div class="feature__desc">продаж   <br/>ежемесячно</div>
                         </div>
-                        <div class="col-3 feature">
-                            <div class="feature__icon" style="background-image: url(/img/icons/i-advantage-3.png);"></div>  
-                            <p class="feature__name">Снабжение под ключ</p>
-                            <span class="feature__desc">Наша специализация - полное снабжение объектов</span>
+                        <div class="col-3 feature feature_transp">
+                            <div class="feature__num">20</div>
+                            <div class="feature__desc">постоянных   <br/>клиентов</div>
                         </div>
-                        <div class="col-3 feature">
-                            <div class="feature__icon" style="background-image: url(/img/icons/i-advantage-4.png);"></div>  
-                            <p class="feature__name">Экспертиза</p>
-                            <span class="feature__desc">Наши 10 лет опыта - гарантия правильного выбора</span>
+                        <div class="col-3 feature feature_transp">
+                            <div class="feature__num">17</div>
+                            <div class="feature__desc">зарубежных   <br/>партнеров</div>
+                        </div>
+                        <div class="col-6">
+                            <ul class="feature__list">
+                                <li>Высокое качество продукции</li>
+                                <li>Индивидуальный подход</li>
+                                <li>Взаимовыгодные условия сотрудничества</li>
+                                <li>Доставка в любую точку России и стран СНГ</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 feature_transp">
+                            <div class="flex-row">
+                                <div class="col-6">
+                                    <div class="feature__icon"></div>
+                                </div>
+                                <div class="col-6 feature">
+                                    <div class="feature__num">28</div>
+                                    <div class="feature__desc">регионов <br/>России</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+                
+                <div class="section-bg section-bg_top-gradient section-bg_bot-gradient" style="background-image: url(/img/bg/bg-hero_2.jpg);"></div>
             </section>
 
+            
+            <section class="section-padding">
 
-
-            <section class="brands-slider section-padding section-margin">
                 <div class="container">
-                     <!-- Swiper -->
-                    <div class="swiper-container swiper-container-brands">
-                        <div class="swiper-wrapper">
+                    <h2>Наши партнеры и клиенты</h2>
+                    <p>АС — надежный партнер по поставке энергетического оборудования широкого профиля. Компания, способная решить все поставленные 
+                    перед ней задачи в срок и с соответствующим качеством. </p>
+                </div>
 
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/husquarna.jpg);"></div>
+                <div class="brands-slider">
+                    <div class="container">
+                         <!-- Swiper -->
+                        <div class="swiper-container swiper-container-brands">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide slide-brands">
+                                    <div class="brand-holder" style="background-image: url(/img/icons/brands/brand-1.png);"></div>
+                                </div>
+
+                                <div class="swiper-slide slide-brands">
+                                    <div class="brand-holder" style="background-image: url(/img/icons/brands/brand-2.png);"></div>
+                                </div>
+
+                                <div class="swiper-slide slide-brands">
+                                    <div class="brand-holder" style="background-image: url(/img/icons/brands/brand-3.png);"></div>
+                                </div>
+
+                                <div class="swiper-slide slide-brands">
+                                    <div class="brand-holder" style="background-image: url(/img/icons/brands/brand-4.png);"></div>
+                                </div>
+
+                                <div class="swiper-slide slide-brands">
+                                    <div class="brand-holder" style="background-image: url(/img/icons/brands/brand-1.png);"></div>
+                                </div> 
+
+                                <div class="swiper-slide slide-brands">
+                                    <div class="brand-holder" style="background-image: url(/img/icons/brands/brand-2.png);"></div>
+                                </div> 
+
+                                <div class="swiper-slide slide-brands">
+                                    <div class="brand-holder" style="background-image: url(/img/icons/brands/brand-4.png);"></div>
+                                </div> 
+
                             </div>
+                        </div>
+                        
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next brands-slider-btn-next"></div>
+                        <div class="swiper-button-prev brands-slider-btn-prev"></div>
+                    </div>
+                </div>
 
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/makita.jpg);"></div>
+            </section>
+
+            <section class="catalog-section section-padding">
+                <div class="container">
+                    <h2>Каталог продукции</h2>
+
+                    <p class="section-margin">
+                        Профессиональный инженерный персонал ООО ТД «ЭАС» успешно решает комплексные задачи по поставке потребителям широкой номенклатуры продукции для всех видов энергетических отраслей промышленности. В своей работе Компания придерживается методов, ориентированных на удовлетворение потребностей клиента. Устоявшиеся контакты с поставщиками позволяют нам в короткое время обеспечить клиентов необходимым им оборудованием. Комплексный принцип ведения бизнеса позволяет компании оптимально выстроить весь процесс поставок, начиная от подбора оборудования и комплектации объектов, составления смет, размещения заказов, и заканчивая непосредственно доставкой поставляемой продукции.
+                    </p>
+
+                    <div class="flex-row">
+                        <div class="col-6 feature feature_filled">
+                            <a href="#">
+                                <span>Трубопроводная арматура</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <div class="flex-row">
+                                <div class="col-6 feature feature_filled">
+                                    <a href="#">
+                                        <span>Тягодутьевые машины </span>
+                                    </a>
+                                </div>
+                                <div class="col-6 feature feature_filled">
+                                    <a href="#">
+                                        <span>Редукционно-охладительные установки</span>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/milwaukee.jpg);"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="flex-row">
+                                <div class="col-6 feature feature_filled">
+                                    <a href="#">
+                                        <span>Охладители пара</span>
+                                    </a>
+                                    </div>
+                                <div class="col-6 feature feature_filled">
+                                    <a href="#">
+                                        <span>Шумоглушители пара</span>
+                                    </a>
+                                    </div>
                             </div>
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/stil.jpg);"></div>
-                            </div>
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/viking.jpg);"></div>
-                            </div> 
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/husquarna.jpg);"></div>
-                            </div>
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/makita.jpg);"></div>
-                            </div>
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/milwaukee.jpg);"></div>
-                            </div>
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/stil.jpg);"></div>
-                            </div>
-
-                            <div class="swiper-slide slide-brands">
-                                <div class="brand-holder" style="background-image: url(/img/icons/brands/viking.jpg);"></div>
-                            </div>                           
-
+                        </div>
+                        <div class="col-6 feature feature_filled">
+                            <a href="#">
+                                <span>Котельное оборудование</span>
+                            </a> 
                         </div>
                     </div>
-                    
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next brands-slider-btn-next"></div>
-                    <div class="swiper-button-prev brands-slider-btn-prev"></div>
                 </div>
+
+                <div class="section-bg section-bg_top-gradient section-bg_bot-gradient" style="background-image: url(/img/bg/bg-tubes.jpg);"></div>
             </section>
+
+
+
+
 
         </main>
 
@@ -150,11 +254,77 @@
 
 
         <footer class="page-footer">
-
+            <div class="container">
+                <div class="flex-row">
+                    <div class="col-6">
+                        <a href="" class="logo logo_colored"></a>
+                        <p>Энергетическое оборудование для нужд энергетики, ЖКХ, металлургии, горнодобывающих, нефтегазовых, химических и других промышленных отраслей.</p>
+                    </div>
+                    <div class="col-6">
+                        <div class="flex-row">
+                            <div class="col-6">
+                                <nav class="nav nav_vertical">
+                                    <a href="#">
+                                        <span>о компании</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>продукция</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>клиентам</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>вакансии</span>
+                                    </a>
+                                    <a href="#">
+                                        <span>контакты</span>
+                                    </a>
+                                </nav>
+                            </div>
+                            <div class="col-6">
+                                <div class="company-info company-info_vert">
+                                    <a href="tel:+73852505031" class="phone">
+                                        +7 (3852) 505-031
+                                    </a>
+                                    <a href="tel:+73852505032" class="phone">505-032</a>
+                                    <a href="#" class="company-mail company-mail_big">Напишите нам!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </footer>
 
-        <div class="legal">
+        <!-- <div class="legal">
  
+        </div> -->
+
+
+
+
+
+
+
+        <div class="nav-left" style="display: none;">
+            <nav class="nav nav_vertical">
+                <a href="#">
+                    <span>о компании</span>
+                </a>
+                <a href="#">
+                    <span>продукция</span>
+                </a>
+                <a href="#">
+                    <span>клиентам</span>
+                </a>
+                <a href="#">
+                    <span>вакансии</span>
+                </a>
+                <a href="#">
+                    <span>контакты</span>
+                </a>
+            </nav>
+            <div class="nav-left__close js-menu-close"></div>
         </div>
 
 
@@ -165,24 +335,42 @@
 
 
 
-
-
-
-
-
-
-
-
-        <!-- MOBILE SLIDE-IN MENU BEGIN-->
         <div class="sticky-header">
             <div class="container">
-   
+                    <div class="btn-burger js-open-menu">
+                        <i class="btn-burger__bar"></i>
+                        <i class="btn-burger__bar"></i>
+                        <i class="btn-burger__bar"></i>
+                    </div>
+
+                    <nav class="nav nav_horizontal">
+                        <a href="#">
+                            <span>о компании</span>
+                        </a>
+                        <a href="#">
+                            <span>продукция</span>
+                        </a>
+                        <a href="#">
+                            <span>клиентам</span>
+                        </a>
+                        <a href="#">
+                            <span>вакансии</span>
+                        </a>
+                        <a href="#">
+                            <span>контакты</span>
+                        </a>
+                    </nav>
+
+                    <div class="company-info company-info_horiz">
+                        <a href="tel:+73852503516" class="phone">
+                            + 7 (3852) 505-031
+                        </a>
+                    </div>
             </div>
             <div id="progress"></div>
         </div>
 
         <div class="overlay js-overlay"></div>
-        <!-- MOBILE SLIDE-IN MENU END-->
 
 
             

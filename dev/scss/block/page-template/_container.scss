@@ -5,12 +5,12 @@
 	padding: 0 $gutter;
 }
 
-// @media screen and (max-width: 1400px) {
-// 	.container {
-// 		width: 95%;
-// 		padding: 0 2rem;
-// 	}
-// }
+@media screen and (max-width: 1400px) {
+	.container {
+		width: 95%;
+		padding: 0 2rem;
+	}
+}
 
 @media screen and (max-width: 667px) {
 	.container {
