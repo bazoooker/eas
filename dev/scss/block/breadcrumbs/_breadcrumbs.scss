@@ -8,26 +8,23 @@
 .breadcrumbs__item {
 	position: relative;
 	display: inline-block;
-	font-size: 1.4rem;
-	color: #b2b2b2;
+	font-size: 1.6rem;
+	color: #fff;
 	margin: 0 .8rem 0 0;
 	padding: .8rem;
 	text-decoration: none;
 	transition: $tr;
 
+	&:visited,
+	&:active {
+		color: #fff;
+	}
+
 	&:after {
 		position: absolute;
-		content: '';
+		content: '/';
 		right: -.8rem;
 		top: 50%;
-
-		width: .7rem;
-		height: .7rem;
-
-		background-image: url(/img//icons/i-octagon_disabled.png);
-		@include bg-contain;
-
-
 		transform: translateY(-50%);
 	}
 
@@ -40,6 +37,6 @@
 	}
 
 	&:hover {
-		color: #49474b;
+		text-decoration: underline;
 	}
 }

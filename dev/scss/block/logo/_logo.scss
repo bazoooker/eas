@@ -28,6 +28,14 @@
 	@include bg-contain;
 }
 
+.logo_hiriz-colored {
+	margin: 0 0 1rem 0;
+	background-image: url(/img/logo_horiz.png); 
+	width: 24rem;
+	height: 8.5rem;
+	@include bg-contain;
+}
+
 @media screen and (max-width: 1023px) {
 	.logo_white {
 		display: block;

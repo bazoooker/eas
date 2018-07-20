@@ -52,12 +52,12 @@
     background-position: bottom center;
     background-size: cover;
     background-repeat: repeat-x;
-    background-image: -ms-linear-gradient(top, #0751B1 0%, transparent 100%);
-    background-image: -moz-linear-gradient(top, #0751B1 0%, transparent 100%);
-    background-image: -o-linear-gradient(top, #0751B1 0%, transparent 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0751B1), color-stop(100, transparent));
-    background-image: -webkit-linear-gradient(top, #0751B1 0%, transparent 100%);
-    background-image: linear-gradient(to bottom, #0751B1 0%, transparent 100%);
+    background-image: -ms-linear-gradient(top, rgba(7, 81, 177, .9) 0%, rgba(7, 81, 177, .2) 100%);
+    background-image: -moz-linear-gradient(top, rgba(7, 81, 177, .9) 0%, rgba(7, 81, 177, .2) 100%);
+    background-image: -o-linear-gradient(top, rgba(7, 81, 177, .9) 0%, rgba(7, 81, 177, .2) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(7, 81, 177, .9)), color-stop(100, rgba(7, 81, 177, .2)));
+    background-image: -webkit-linear-gradient(top, rgba(7, 81, 177, .9) 0%, rgba(7, 81, 177, .2) 100%);
+    background-image: linear-gradient(to bottom, rgba(7, 81, 177, .9) 0%, rgba(7, 81, 177, .2) 100%);
 }
 
 @mixin font-h1 {

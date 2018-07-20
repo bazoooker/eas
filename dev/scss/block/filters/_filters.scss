@@ -1,5 +1,37 @@
 .filters {
-	border: 2px solid #e1e1e1;
-	padding: 3rem 2.5rem 3rem 2.5rem;
+	border: 1px solid #d9d9d9;
+	padding: 2rem 2rem 2rem 2rem;
 
+	h4 {
+		margin: -2rem -2rem 2rem -2rem;
+	    color: $color_main;
+	    font-size: 1.6rem;
+	    font-weight: 600;
+	    padding: 2rem 0 2rem 2rem;
+	}
+
+	input[type=text] {
+	    width: 5.9rem;
+		display: inline-block;
+		text-align: center;
+		margin: 0 .8rem;
+	    padding: 8px;
+		
+		border: 1px solid #d9d9d9;
+	    background-color: #f8f8f8;
+
+
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.filters {
+		h4,
+		.filter-category {
+			text-align: center;
+		}
+		.nice-select {
+			margin: 0 auto;
+		}
+	}
 }

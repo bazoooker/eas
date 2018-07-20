@@ -71,79 +71,6 @@
 	// }
 }
 
-.btn_one-click {
-	flex: 1 1 50%;
-
-	@include flex-row(nowrap, flex-start, center);
-	background-color: transparent;
-
-	padding: .8rem .8rem .8rem .8rem;
-	border: 2px solid transparent;
-	line-height: 1.8rem;
-	transition: $tr;
-
-	font-size: 1.1rem;
-	text-transform: uppercase;
-
-	&:visited span {color: #514f53;}
-	&:active span {color: #514f53;}
-
-
-	span {
-		display: inline-block;
-		margin: 0 auto;
-		position: relative;
-
-		font-size: 1.2rem;
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #514f53;
-		transition: $tr;
-
-
-
-		&::before {
-			@include pseudo;
-			width: 100%;
-			height: 1px;
-			left: 0;
-			bottom: -.5rem;
-			background-color: $color_font;
-			background-color: rgba(0,0,0,.1);
-		}
-	}
-
-	&:hover span::before {
-		display: none;
-	}
-	&:hover span {
-		color: #000;
-	}
-	&:hover {
-		background-color: #eaeaea;
-	}
-
-}
-
-
-.btn_outline {
-	background-color: transparent;
-	border: 2px solid #e3e3e3;
-	color: $color_font;
-
-	transition: $tr;
-
-	&:visited,
-	&:active {
-		color: $color_font;
-	}
-
-	&:hover {
-		background-color: #e3e3e3;
-		color: #3e3d3d;
-	}
-
-}
 
 .btn-burger {
 	margin: 0 0 0 0;
@@ -218,38 +145,48 @@
 
 }
 
-.btn_metal {
-	position: relative;
-    background-image: url(/img/bg/bg-btn.jpg);
-    padding: 1rem 3.5rem;
-    font-size: 1.6rem;
-    color: #fff;
-    font-weight: 400;
 
-    &:visited,
-	&:active {
-		color: #fff;
+.btn_buy {
+	display: inline-block;
+	position: relative;
+    padding: 1.6rem 1.6rem 1.6rem 6rem;
+
+    background-image: url(/img/bg/bg-btn.jpg);
+    @include bg-cover;
+
+    border: 0;
+    outline: 0;
+	
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
+	transition: $tr;
+
+	&::before {
+		@include pseudo;
+
+		width: 2rem;
+		height: 2rem;
+		left: 2rem;
+		top: 50%;
+		transform: translateY(-50%);
+
+		background-image: url(/img/icons/i-checkbox.png);
+		@include bg-contain;
+		transition: $tr;
+
 	}
 
-    &:hover::after {
-    	height: 100%;
-    }
 
-    &::after {
-    	@include pseudo;
-    	left: 0;
-    	top: 0;
-    	width: 100%;
-    	height: 0%;
-    	background-color: rgba(255,255,255,.3);
-
-    	transition: $tr;
+    &:hover {
+    	opacity: .85;
+    	&::before {
+    		transform: translateY(-50%) translateX(3px);
+    	}
     }
 }
-
-
-
-
 
 
 
@@ -266,45 +203,8 @@
 
 
 
-.btn_outline-white {
-	background-color: transparent;
-	border: 1px solid #fff;
-	color: #fff;
 
-	&:visited,
-	&:active {
-		color: #fff;
-	}
 
-	&:hover {
-		color: $color_main-b;
-		background-color: #fff;
-		border: 1px solid transparent;
-	}
-}
-
-input.btn {
-	border: 0;
-	outline: none;
-}
-
-.btn_buy {
-    background-image: url(/img/icons/cart-glyph.png);
-    background-size: 18px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    // border: 1px solid #1837a5;
-    height: 26px;
-    flex: 0 0 30px;
-    padding: 0;
-    margin: 0 3px 0 0;
-
-    &:hover {
-    	// border: 1px solid $color_main-r;
-    	background-color: $color_main-r;
-    	// background-image: url(/img/icons/cart-glyph_blue.png);
-    }
-}
 
 
 

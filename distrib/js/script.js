@@ -1,5 +1,6 @@
  $(document).ready(function() {
   $('select').niceSelect();
+  console.log('niceselect go');
 });
 
 //новости с ленивой загрузкой

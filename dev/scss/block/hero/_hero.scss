@@ -2,7 +2,7 @@
 	position: relative;
 	@include bg-cover;
 
-	padding: 9.5rem 0 $gutter 0;
+	// padding: 9.5rem 0 $gutter 0;
 
 	h1 {
 		font-size: 6rem;
@@ -21,7 +21,11 @@
 }
 
 .hero_main-page {
+	padding: 9.5rem 0 $gutter 0;
+}
 
+.hero_inner-page {
+	padding: 9.5rem 0 3rem 0;
 }
 
 
