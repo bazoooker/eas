@@ -1,17 +1,44 @@
 .catalog-list {
 	border-spacing: 0;
+	min-width: 960px;
+
+	tr:hover {
+			td {
+				background-color: lightgray;
+			}
+		}
 
 	td {
-		padding: 1rem;
+		padding: 1rem .5rem;
 	}
 	
 	thead {
-		background-image: url(/img/bg/bg-thead.jpg);
-		@include bg-cover;
-
+		font-size:1.1rem;
+		line-height:1.7rem;
+		background-color: $color_main;
+		&::hover {
+			background-color: $color_main;
+		}
 		td {
 			color: #fff;
 			font-weight: 600;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.catalog-list {
+		
+		td {
+			padding: .6rem;
+			font-size: 1.2rem;
+			transition: $tr;
+		}
+		thead {
+			td {
+				font-weight: 400;
+				font-size: 1.2rem;
+			}
 		}
 	}
 }

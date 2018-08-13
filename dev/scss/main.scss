@@ -62,7 +62,7 @@
 // swiper
 @import "block/swiper/swiper";
 // @import "block/swiper/slide-category";
-// @import "block/category/category";
+@import "block/category/category";
 // @import "block/catalog-slider/catalog-slider";
 
 @import "block/brands-slider/brands-slider";
@@ -138,12 +138,12 @@
 @import "block/hero/hero";
 
 // well
-// @import "block/well";
+@import "block/well/well";
 // @import "block/ref";
-// @import "block/lead";
+@import "block/lead/lead";
 
 // animate lib
-// @import "block/animate/animate";
+@import "block/animate/animate";
 
 // misc
 @import "block/to-top/to-top";
@@ -156,5 +156,6 @@
 
 
 // accordeon
-// @import "block/accordeon/accordeon";
+@import "block/accordeon/accordeon";
+@import "block/client/client";
 

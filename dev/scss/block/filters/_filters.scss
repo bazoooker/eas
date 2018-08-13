@@ -1,13 +1,15 @@
 .filters {
 	border: 1px solid #d9d9d9;
-	padding: 2rem 2rem 2rem 2rem;
+	// padding: 2rem 2rem 2rem 2rem;
 
 	h4 {
-		margin: -2rem -2rem 2rem -2rem;
+		padding: 2rem 2rem 2rem 2rem;
+		margin: 0;
+		// margin: -2rem -2rem 2rem -2rem;
 	    color: $color_main;
 	    font-size: 1.6rem;
 	    font-weight: 600;
-	    padding: 2rem 0 2rem 2rem;
+	    // padding: 2rem 0 2rem 2rem;
 	}
 
 	input[type=text] {
@@ -19,9 +21,21 @@
 		
 		border: 1px solid #d9d9d9;
 	    background-color: #f8f8f8;
-
-
 	}
+
+}
+
+
+.bx-filter-popup-result  {
+	display: inline-block;
+    color: #9e9e9e;
+    padding: .9rem 1rem;
+    border: 1px solid transparent;
+    font-size: 1.4rem;
+
+    #modef_num {
+    	font-weight: 600;
+    }
 }
 
 @media screen and (max-width: 992px) {

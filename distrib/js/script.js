@@ -438,16 +438,16 @@ $(document).ready(function () {
     // ACCORDEON
 
     // $('.js-accordeon .js-accordeon__content').slideUp(0);    
-    $('.js-accordeon .js-accordeon__label').click(function() {
+    $('.accordeon-item__label').click(function() {
 
         // подсвечиваем открытый аккордеон
         if ( $(this).parent().hasClass('opened') ) {
             $(this).parent().removeClass('opened');
-            $(this).parent().children('.js-accordeon__content').slideUp(300);
+            $(this).parent().children('.accordeon-item__content').slideUp(300);
         }
         else {
             $(this).parent().addClass('opened');
-            $(this).parent().children('.js-accordeon__content').slideDown(300);
+            $(this).parent().children('.accordeon-item__content').slideDown(300);
         }
     });
 
@@ -719,6 +719,7 @@ $(document).ready(function() {
     $('.showtype_map').click(showMap);    
     $('.showtype_list').click(showList);    
 });
+
 
 
 // $(document).ready(function() { 

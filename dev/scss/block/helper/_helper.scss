@@ -22,11 +22,16 @@
 }
 
 .section-margin {
-	margin-bottom: 4rem;
+	margin-bottom: $gutter;
 }
 .section-padding {
-	padding: 4rem 0 4rem 0;
+	padding: $gutter 0 $gutter 0;
 }
+
+.no-top-margin {
+	margin-top: -$gutter;
+}
+
 .no-bullets {
 	list-style: none;
 	padding:0;
@@ -42,6 +47,10 @@
 	background-position: top center;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+.img-resp {
+	max-width: 100%;
 }
 
 .table-resp {

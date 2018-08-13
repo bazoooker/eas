@@ -8,6 +8,11 @@
 
 	transition: $tr;
 
+	&:visited,
+	&:active {
+		color: #fff;
+	}
+
 	&:hover {
 		transform: translateY(2px);
 	}

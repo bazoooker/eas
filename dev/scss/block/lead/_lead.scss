@@ -1,13 +1,18 @@
 .lead {
-	font-weight: 400;
     padding: 0 2rem;
-    padding: 3rem 4rem;
-    background-image: url(/img/bg/bg-theme-1_transparent.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    box-shadow: 0 0 45px 1px rgba(0,0,0,.1);
-    font-size: 1.8rem;
+    padding: 4rem 5rem;
+    background-color: $color_main;
+
+    .container {
+        p {
+            font-size: 2.3rem;
+            font-weight: 400;
+            margin-bottom: 0;
+
+            color: #fff;
+        }
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -15,5 +20,15 @@
 		margin-left: -5%;
 	    margin-right: -5%;
 	    padding: 4rem 7%;
+
+    .container {
+        p {
+            font-size: 1.9rem;
+            font-weight: 400;
+            margin-bottom: 0;
+
+            color: #fff;
+        }
+    }
 	}
 }

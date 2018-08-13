@@ -15,7 +15,7 @@
 
 .feature__icon {
 	margin: auto;
-	height: 100%;
+	height: 17.5rem;
 	width: 100%;
 
 
@@ -37,10 +37,16 @@
 }
 
 .feature__list {
+	list-style: none;
+	padding: 2rem 2rem 2rem 3rem;
 	li {
 		color: #fff;
 		list-style: none;
 		font-weight: 600;
+		padding-left: 0;
+		&::before {
+			display: none;
+		}
 	}
 }
 
@@ -50,18 +56,64 @@
 	height: 17rem;
 	transition: $tr;
 
-	a {
+	&.feature_inner {
+		padding: 0 0 2.5rem 0 !important;
+		height: 100%;
+		&:hover {
+			background-color: $color_main;
+		}
+		& > span {
+			display: block;
+			padding: 1.5rem 1.5rem 1.5rem 3rem;
+		    color: #fff;
+		    font-size: 2.8rem;
+		    font-weight: 200;
+			margin: 0 0 10px 0;
+			text-decoration: none;
+			line-height: 110%;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.simplelist {
+			margin: 0 $gutter/2 0 $gutter/2;
+			padding: 0;
+			li {
+				&::before {
+					background-color: #fff;
+					transition: $tr;
+				}
+				&:hover::before {
+					transform: translateX(2px);
+					
+				}
+				a {
+					color: #fff;
+					text-decoration: none;
+					transition: $tr;
+					font-weight: 200;
+					&:hover {
+						text-decoration: underline;
+						opacity: .95;
+					}
+				}
+			}
+		}
+	}
+
+	& > a {
 	    display: block;
 	    height: 17rem;
-	    margin: -3rem -2rem -3rem -3rem;
-	    padding: 3rem 2rem 3rem 3rem;
+	    // margin: -3rem -2rem -3rem -3rem;
+	    // padding: 3rem 2rem 3rem 3rem;
 
 	    span {
 	    	display: block;
 	    	color: #fff;
 	    	font-size: 3rem;
 	    	font-weight: 300;
-	    	padding: 2rem 1rem 2rem 3rem;
+	    	padding: 2rem 2rem 2rem 3rem;
 	    }
 	}
 
@@ -76,7 +128,40 @@
 @media screen and (max-width: 1200px) {
 	.feature_filled {
 
-		a {
+		&.feature_inner {
+			padding: 0 0 2.5rem 0 !important;
+
+			& > a {
+				margin: 0 0 20px 0;
+				border-bottom: 1px solid #fff;
+			}
+
+			.simplelist {
+				margin: 0 $gutter/4 0 $gutter/2;
+				padding: 0;
+				li {
+					padding-left: 2rem;
+					&::before {
+						width: 6px;
+						height: 6px;
+						background-color: #fff;
+					}
+					a {
+						color: #fff;
+						text-decoration: none;
+						transition: $tr;
+						font-weight: 200;
+						font-size: 14px;
+						&:hover {
+							text-decoration: underline;
+							opacity: .95;
+						}
+					}
+				}
+			}
+		}
+
+		& > a {
 		    span {
 		    	font-size: 2rem;
 		    }
@@ -87,9 +172,9 @@
 @media screen and (max-width: 1024px) {
 	.feature_filled {
 
-		a {
-			margin: -3rem -2rem -3rem -3rem;
-	    	padding: 3rem 1.3rem 1.3rem 1.3rem;
+		& > a {
+			// margin: -3rem -2rem -3rem -3rem;
+	    	// padding: 3rem 1.3rem 1.3rem 1.3rem;
 		    span {
 		    	font-size: 1.8rem;
 		    }
@@ -100,7 +185,7 @@
 @media screen and (max-width: 960px) {
 	.feature_filled {
 
-		a {
+		& > a {
 		    span {
 		    	font-size: 1.6rem;
 		    }
@@ -111,12 +196,16 @@
 @media screen and (max-width: 768px) {
 	.feature_filled {
 
-		a {
-			margin: -3rem -2rem -3rem -3rem;
-	    	padding: 3rem 2rem 3rem 3rem;
+		& > a {
+			// margin: -3rem -2rem -3rem -3rem;
+	    	// padding: 3rem 2rem 3rem 3rem;
 		    span {
 		    	font-size: 2.4rem;
 		    }
 		}
+	}
+
+	.feature__icon {
+		display: none;
 	}
 }

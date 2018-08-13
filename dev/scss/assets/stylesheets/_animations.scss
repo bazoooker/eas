@@ -43,3 +43,17 @@
 		transform:  translateX(0) translateY(-50%);
 	}
 }
+
+
+@keyframes fade-in-out{
+	0% {
+		opacity: .1;
+	}
+
+	50% {
+		opacity: 0
+	}
+	100% {
+		opacity: .1;
+	}
+}

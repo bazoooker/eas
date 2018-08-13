@@ -2,17 +2,47 @@
 	display: inline-block;
 	position: relative;	
 	overflow: hidden;
-	font-size: 1.1rem;
+	font-size: 1.6rem;
 	line-height: 1.5rem;
 	text-decoration: none;
-	font-weight: 600;
+	font-weight: 400;
 	// background-color: $color_main-b;
-	padding: 1rem 1rem;
+	padding: 1rem 3rem;
 	cursor: pointer;
+	border-radius: 0 !important;
+	border: 1px solid transparent;
+	transition: $tr;
 	
-	&:visited {
-	
+	&:visited, &:focus {}
+
+}
+
+.btn_outline {
+	color: $color_main;
+	background-color: #fff;
+	border: 1px solid $color_main;
+	&:visited, &:focus {color: $color_main;}
+}
+
+.btn_main {
+	color: #fff;
+	background-color: $color_main;
+	font-weight: 600 !important;
+	&:visited, &:focus {color: #fff;}
+
+	&:hover {
+		background-color: lighten($color_main, 5%);
 	}
+}
+
+.btn_disabled {
+	color: #000;
+    background-color: #e0dfdf;
+    font-weight: 400 !important;
+    opacity: .5;
+    cursor: default !important;
+	&:visited, &:focus {color: #000;}
+	cursor: default !important;
 
 }
 
@@ -60,15 +90,6 @@
 	&:hover::after {
 		transform: scale(1.2);
 	}
-
-	// &:hover::before {
-	// 	background-color: #fff;
-	// }
-	// &:hover::after {
-	// 	background-color: #fff;
-	// 	background-image: url(/img/icons/i-cart_orange.png);
-	// 	background-position: 70% 50%;
-	// }
 }
 
 
@@ -162,7 +183,6 @@
 	font-weight: 600;
 	text-decoration: none;
 	cursor: pointer;
-	transition: $tr;
 
 	&::before {
 		@include pseudo;
@@ -173,7 +193,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 
-		background-image: url(/img/icons/i-checkbox.png);
+		background: url(/img/icons/i-checkbox.png);
 		@include bg-contain;
 		transition: $tr;
 
@@ -181,14 +201,19 @@
 
 
     &:hover {
-    	opacity: .85;
+    	color: #fff;
+    	background: $color_main;
     	&::before {
     		transform: translateY(-50%) translateX(3px);
     	}
     }
 }
 
-
+@media screen and (max-width: 992px) {
+	.btn {
+		font-size: 1.3rem;
+	}
+}
 
 // ======================================================
 
@@ -308,19 +333,4 @@
     &:hover {
     	background-position: 10px center;
     }
-}
-
-@media screen and (max-width: 768px) {
-	.btn,
-	.btn_download {
-		font-size: 1.6rem;
-	}
-}
-
-@media screen and (max-width: 414px) {
-	.btn,
-	.btn_download {
-		font-size: 1.5rem;
-		line-height: 1.8rem;
-	}
 }

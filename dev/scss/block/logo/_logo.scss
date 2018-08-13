@@ -15,14 +15,14 @@
 }
 .logo_white {
 	margin: 0 0 $gutter 0;
-	background-image: url(/img/logo.png); 
+	background-image: url(/img/logo-vertical-white.png); 
 	width: 19.2rem;
 	height: 17rem;
 	@include bg-contain;
 }
 .logo_colored {
 	margin: 0 0 1rem 0;
-	background-image: url(/img/logo_horiz-colored.png); 
+	background-image: url(/img/logo-horizontal-blue.png); 
 	width: 24rem;
 	height: 8.5rem;
 	@include bg-contain;
@@ -30,7 +30,7 @@
 
 .logo_hiriz-colored {
 	margin: 0 0 1rem 0;
-	background-image: url(/img/logo_horiz.png); 
+	background-image: url(/img/logo-horizontal-white.png); 
 	width: 24rem;
 	height: 8.5rem;
 	@include bg-contain;

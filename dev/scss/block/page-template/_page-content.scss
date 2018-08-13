@@ -12,12 +12,5 @@
 
 
 .page-content_inner {
-	background-image: url(/img/bg/bg-section-shadow.png);
-	background-position: top center;
-	background-size: contain;
-	background-repeat: no-repeat;
-
-	h2 {
-		margin: 0 0 .5rem 0;
-	}
+	padding: 0 0 $gutter 0;
 }
